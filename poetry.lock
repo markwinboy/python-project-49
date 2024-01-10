@@ -28,6 +28,17 @@ files = [
 ]
 
 [[package]]
+name = "operators"
+version = "1.0.1"
+description = "Arithmetic Operators"
+optional = false
+python-versions = "*"
+files = [
+    {file = "operators-1.0.1-py3-none-any.whl", hash = "sha256:dc066c63c4ceb8f40f46618e7a251b4876725661f728c277b2eee4a09d6a9a91"},
+    {file = "operators-1.0.1.tar.gz", hash = "sha256:6f6add5704ddde84e6bbc3176d0eb323b56c4fcde375d0f3228be2d19acc50a6"},
+]
+
+[[package]]
 name = "prompt"
 version = "0.4.1"
 description = "Library for prompting input on the command line."
@@ -63,4 +74,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "781b72c0a2ffb41d529c32c6c7cd4047b14d135fd3d496593fc491c7145f8605"
+content-hash = "50368b101a51c99dbe438c1007c85bb34d079c781f36c739e9457e6271b9e524"

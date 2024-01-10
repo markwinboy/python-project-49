@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 from brain_games import common
+import prompt
 
 def game_loop(name):
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print("What is the result of the expression?")
     for _ in range(3):
-        number = common.generate_number()
-        print(f"Question: {number}")
-        answer = input("Your answer: ")
-        correct_answer = "yes" if common.is_even(number) else "no"
+        num1, op, num2, correct_answer = common.generate_expression()
+        print(f"Question: {num1} {op} {num2}")
+        answer = prompt.integer('Your answer: ')
+
         common.check_output(answer, name, correct_answer)
     print(f"Congratulations, {name}!")
 
