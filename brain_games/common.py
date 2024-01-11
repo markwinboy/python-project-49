@@ -2,10 +2,20 @@ import prompt
 import random
 import operator
 
+def generate_progression():
+    start = random.randint(1, 10)
+    step = random.randint(1, 10)
+    length = random.randint(5, 10)
+    hidden_index = random.randint(0, length - 1)
+    progression = [start + step * i for i in range(length)]
+    correct_answer = progression[hidden_index]
+    progression[hidden_index] = '..'
+    return progression, correct_answer
+
 def generate_expression():
     operations = {"+": operator.add, "-": operator.sub, "*": operator.mul}
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
+    num1 = generate_number()
+    num2 = generate_number()
     op = random.choice(list(operations.keys()))
     return num1, op, num2, operations[op](num1, num2)
 
