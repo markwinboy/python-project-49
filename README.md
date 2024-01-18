@@ -1,3 +1,15 @@
+## Описание
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
+
+Калькулятор. Арифметические выражения, которые необходимо вычислить
+Прогрессия. Поиск пропущенных чисел в последовательности чисел
+Определение четного числа
+Определение наибольшего общего делителя
+Определение простого числа
+
+### Установка
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/markwinboy/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/markwinboy/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/64ff6d5e82bc41fbc0f3/maintainability)](https://codeclimate.com/github/markwinboy/python-project-49/maintainability)
