@@ -3,6 +3,7 @@ from brain_games import common
 import prompt
 import math
 
+
 def game_loop(name):
     print("Find the greatest common divisor of given numbers.")
     for _ in range(3):
@@ -14,9 +15,11 @@ def game_loop(name):
         common.check_output(answer, name, correct_answer)
     print(f"Congratulations, {name}!")
 
+
 def main():
     name = common.welcome_user()
     game_loop(name)
+
 
 if __name__ == '__main__':
     main()
