@@ -3,3 +3,5 @@
 *.cast
 
 __pycache__/
+
+dist/
