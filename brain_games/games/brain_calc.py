@@ -1,23 +1,15 @@
 #!/usr/bin/env python3
-from brain_games import engine
-import prompt
+import operator
+import random
 
 
-def game_loop(name):
-    print("What is the result of the expression?")
-    for _ in range(3):
-        num1, op, num2, correct_answer = engine.generate_expression()
-        print(f"Question: {num1} {op} {num2}")
-        answer = prompt.integer('Your answer: ')
-
-        engine.check_output(answer, name, correct_answer)
-    print(f"Congratulations, {name}!")
+def generate_number():
+    return random.randint(1, 100)
 
 
-def main():
-    name = engine.welcome_user()
-    game_loop(name)
-
-
-if __name__ == '__main__':
-    main()
+def generate_expression():
+    operations = {"+": operator.add, "-": operator.sub, "*": operator.mul}
+    num1 = generate_number()
+    num2 = generate_number()
+    op = random.choice(list(operations.keys()))
+    return num1, op, num2, operations[op](num1, num2)
